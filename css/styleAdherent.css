@@ -1,0 +1,12 @@
+input, select{
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#val{
+    margin-top: 10px;
+    text-align: center;
+}
+.btn{
+    background-color: #101010
+}

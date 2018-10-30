@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>Adhérent</title>
+        <link rel="stylesheet" href="css/styleAdherent.css">
+        <link rel="stylesheet" href="css/styleCommun.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="accueil.html">Accueil</a></li>
+                        <li><a href="adherents.html">Adhérents</a></li>
+                        <li><a href="bibliotheque.html">Bibliothèque</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="prenom">Prénom:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" autofocus autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="nom">Nom:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                               placeholder="Entrez votre prénom" 
+                               pattern="[A-Z]{2,24}" 
+                               name="nom" id="nom" 
+                               autocomplete="off"
+                               title="Le nom doit être en majuscules">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="naissance">Date de naissance:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control"
+                               name="date" id="date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="tel">Téléphone:</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="tel"
+                               placeholder="01 23 45 67 89" 
+                               pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"
+                               name="tel" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pref">Préference de contact:</label>
+                    <div class="col-sm-10">
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" checked>Mail
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio">Téléphone
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="sefvices">Services souscrits:</label>
+                    <div class="col-sm-10">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Animations
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Spectacles
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Emprunts illimités
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="tel">Code parrainage:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="parrainage"
+                               min="10" value="10">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pays">Pays:</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" name="pays" id="pays" required>
+                            <optgroup label="Europe">
+                                <option value="Allemagne">Allemagne </option>
+                                <option value="Belgique">Belgique </option>
+                                <option value="Andorre">Andorre </option>
+                                <option value="Bulgarie">Bulgarie </option>
+                                <option value="Croatie">Croatie </option>
+                                <option value="Danemark">Danemark </option>
+                                <option value="Estonie">Estonie </option>
+                                <option value="Finlande">Finlande </option>
+                                <option value="France" selected="selected">France </option>
+                                <option value="Grece">Grece </option>
+                                <option value="Hongrie">Hongrie </option>
+                                <option value="Irlande">Irlande </option>
+                                <option value="Italie">italie </option>
+                                <option value="Lettonie">Lettonie </option>
+                                <option value="Liechtenstein">Liechtenstein </option>
+                                <option value="Lituanie">Lituanie </option> 
+                                <option value="Luxembourg">Luxembourg </option>
+                                <option value="Malte">Malte </option>
+                                <option value="Monaco">Monaco </option>
+                                <option value="Pays_Bas">Pays Bas </option>
+                                <option value="Pologne">Pologne </option>
+                                <option value="Portugal">Portugal </option>
+                                <option value="Republique_Tcheque">Republique Tcheque </option>
+                                <option value="Royaume_Uni">Royaume Uni </option>
+                                <option value="Russie">Russie </option>
+                                <option value="Slovaquie">Slovaquie </option>
+                                <option value="Slovenie">Slovenie</option>
+                                <option value="Suede">Suede </option>
+                                <option value="Suisse">Suisse </option>
+                                <option value="Turquie">Turquie </option>
+                                <option value="Vatican">Vatican </option>
+                            </optgroup>
+                            <optgroup label="Amériques">
+                                <option value="Argentine">Argentine </option>
+                                <option value="Bresil">Bresil </option>
+                                <option value="Colombie">Colombie </option>
+                                <option value="Cuba">Cuba </option>
+                                <option value="Etats_Unis">Etats-Unis </option>
+                                <option value="Georgie">Georgie </option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guinee">Guinee </option>
+                                <option value="Guyana">Guyana </option>
+                                <option value="Hawaii">Hawaii </option> 
+                                <option value="Mexique">Mexique </option>
+                                <option value="Nicaragua">Nicaragua </option>
+                                <option value="Panama">Panama </option>
+                                <option value="Paraguay">Paraguay </option>
+                                <option value="Perou">Perou </option>
+                                <option value="Philippines">Philippines </option> 
+                                <option value="Porto_Rico">Porto_Rico </option>
+                            </optgroup>
+                            <optgroup label="Asie">
+                                <option value="Chine">Chine </option> 
+                                <option value="Coree_du_Nord">Coree du Nord </option>
+                                <option value="Coree_du_Sud">Coree du Sud </option>
+                                <option value="Hong_Kong">Hong Kong </option>
+                                <option value="Inde">Inde </option>
+                                <option value="Indonesie">Indonesie </option>
+                                <option value="Japon">Japon </option>
+                                <option value="Kazakhstan">Kazakhstan </option>
+                                <option value="Kirghizstan">Kirghizistan </option>
+                                <option value="Laos">Laos </option>
+                                <option value="Malaisie">Malaisie </option>
+                                <option value="Mongolie">Mongolie </option>
+                                <option value="Ouzbekistan">Ouzbekistan </option>
+                                <option value="Pakistan">Pakistan </option>
+                            </optgroup>
+                            <optgroup label="Afrique">
+                                <option value="Afrique_Centrale">Afrique Centrale </option>
+                                <option value="Afrique_du_sud">Afrique du Sud </option> 
+                                <option value="Algerie">Algerie </option>
+                                <option value="Angola">Angola </option>
+                                <option value="Botswana">Botswana </option>
+                                <option value="Bhoutan">Bhoutan </option>
+                                <option value="Burkina_Faso">Burkina_Faso </option>
+                                <option value="Burundi">Burundi </option>
+                                <option value="Cambodge">Cambodge </option>
+                                <option value="Cameroun">Cameroun </option>
+                                <option value="Congo">Congo </option>
+                                <option value="Congo_democratique">Congo_democratique </option>
+                                <option value="Cote_d_Ivoire">Côte d'Ivoire </option>
+                                <option value="Egypte">Egypte </option> 
+                                <option value="Ethiopie">Ethiopie </option>
+                                <option value="Gabon">Gabon </option>
+                                <option value="Gambie">Gambie </option>
+                                <option value="Ghana">Ghana </option>
+                            </optgroup>
+                            <optgroup label="Océanie">
+                                <option value="Australie">Australie </option>
+                                <option value="Nouvelle_Zelande">Nouvelle Zelande </option>
+                            </optgroup>
+                        </select><br/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="vip">VIP:</label>
+                    <div class="col-sm-10">
+                            <input type="checkbox" value="" disabled>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-md">Valider</button>
+            </form></div>
+        <footer>
+            Médiathèque
+        </footer>
+    </body>
+</html>

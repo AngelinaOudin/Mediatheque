@@ -1,0 +1,67 @@
+.global{
+    overflow: auto;
+}
+.jumbotron, #infos {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+}
+#nouveautes{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#nouveautes .obj{
+    box-sizing: border-box;
+    display: inline-grid;
+    padding: 10px;
+}
+#images{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    min-width: 200px;
+    height: 150px;
+}
+#emprunts{
+    overflow: auto;
+}
+#infos{
+    text-align: center;
+}
+.news{
+    text-align: center;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+#texte_notes{
+    align-self: center;
+    height: auto;
+    width: 150px;
+}
+
+.visuel{
+    height: 150px;
+    border-radius: 10px;
+}
+p{
+    text-align: justify;
+    text-indent: inherit;
+}
+menu > item > a:hover{
+    background-color: royalblue;
+    color: whitesmoke;
+}
+#btntab{
+    justify-content: center
+}
+

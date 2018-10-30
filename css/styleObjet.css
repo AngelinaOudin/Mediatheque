@@ -1,0 +1,14 @@
+aside img{
+    float: left;
+    position: relative;
+    width: 10%;
+    padding-right: 10px;
+}
+a{
+    position: relative;
+}
+
+section{
+    text-align: center;
+    padding-right: 10px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Accueil</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/styleAccueil.css">
+        <link rel="stylesheet" href="css/styleCommun.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="accueil.html">Accueil</a></li>
+                        <li><a href="adherents.html">Adhérents</a></li>
+                        <li><a href="bibliotheque.html">Bibliothèque</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row row-offcanvas row-offcanvas-right">
+                <section class="col-sm-10">
+                    <section class="jumbotron" id="nouveautes">
+                        <div class=news>
+                            <h2 id="titre_news">Nouveautés :</h2>
+                            <div class="obj">
+                                <h3>Jeu vidéo</h3>
+                                <a href="objets/objet.html">
+                                    <img class="img-resonsive" id="images" style="background-image: url(images/goldenEye.jpg)"/>
+                                    
+                                </a>
+                            </div>
+                            <div class="obj">
+                                <h3>Livre</h3>
+                                <a href="objets/objet2.html">
+                                    <img class="img-resonsive" id="images" style="background-image: url(images/Ceux-qui-sauront.jpg)"/>
+                                </a>
+                            </div>
+                            <div class="obj">
+                                <h3>Album</h3>
+                                <a href="objets/objet.html">
+                                    <div id="images" style="background-image: url(images/MWAM.jpg)">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="obj">
+                                <h3>Film</h3>
+                                <a href="objets/objet.html">
+                                    <div id="images" style="background-image: url(images/bladeRunner.jpg)">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="obj">
+                                <h3>BD/Manga</h3>
+                                <a href="objets/objet.html">
+                                    <div id="images" style="background-image: url(images/radiant.jpg)">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="jumbotron" id="emprunts">
+                        <h2>Emprunts :</h2>
+                        <table class="table table-striped table-bordered" id="table">
+                        
+                        </table>
+                        <button type="button" id="btntab" class="btn btn-dark">Ajouter</button>
+                        <button type="button" id="btntab" class="btn btn-dark">Modifier</button>
+                        <button type="button" id="btntab" class="btn btn-dark">Supprimer</button>
+                    </section>
+                </section>
+                <section class="col-sm-2 sidebar-offcanvas" id="infos">
+                    <div class="tendances"><h3>Actualités :</h3>
+                        <p>La tendance est aux films et aux livres. Les emprunts dans ces deux catégories ont explosées ces derniers jours.</p>
+                        <p>À contrario, les albums enregistrent une baisse des emprunts depuis la semaine dernière, ce qui pousse les médiathèques à allonger la durée des prêts.</p>
+                    </div>
+                    <hr/>
+                    <div class="notes"><h3>Notes :</h3>
+                       <p id="note"></p>
+                        <button type="button" id="btn" class="btn btn-dark" onclick="ajoutNote()">Ajouter note</button>
+                    </div>
+                    <hr/>
+                    <div class="indicateurs"><h3>Indicateurs :</h3>
+                        <p>Nombre d'emprunts : <span id="nbEmprunts"></span></p>
+                        <p>Nombre d'emprunteurs : <span id="nbEmprunteurs"></span></p>
+                        <p>Nombre d'objets dans la bibliothèque : <span id="nbObjets"></span></p>
+                    </div>
+                </section>
+            </div>
+            
+        <footer>
+            Médiathèque
+        </footer>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="javascript/scriptMediatheque.js"></script>
+    </body>
+</html>
